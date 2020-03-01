@@ -1,0 +1,74 @@
+:root {
+    --run: 5s;
+    --jump: 1.5s;
+}
+
+.trex-toddle, .trex-blink, .trex-stand, .trex-duck, .trex-shock {
+    background: url('./assets/100-offline-sprite.png');
+    display: block;
+    height: 47px;
+    width: 44px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.trex-duck {
+    height: 25px;
+    width: 59px;
+
+    animation: duck-toddle .25s infinite steps(2);
+}
+
+.trex-toddle {
+    animation: toddle .25s infinite steps(2);
+}
+
+.trex-run {
+    animation: run var(--run) forwards linear,
+    jump var(--jump) infinite;
+    bottom: 0px;
+    position: absolute;
+}
+
+.trex-shock {
+    background-position: 207px 0;
+}
+
+.trex-blink {
+    background-position: 339px 0;
+}
+
+.trex-stand {
+    background-position: 383px 0;
+}
+
+@keyframes duck-toddle {
+    0% { background-position: 60px 47px; }
+    100% { background-position: 179px 47px; }
+}
+
+@keyframes run {
+    0% { left: -10%; }
+    100% { left: 100%; }
+}
+
+@keyframes jump {
+    from, 20%, 65%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+      }
+    
+      40%, 42% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -150px, 0);
+        transform: translate3d(0, -150px, 0);
+      }
+}
+
+@keyframes toddle {
+    0% { background-position: 252px 0; }
+    100% { background-position: 340px 0; }
+}

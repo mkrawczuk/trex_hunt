@@ -1,0 +1,8 @@
+.score {
+    text-align: right;
+}
+
+.scorebar {
+    display: block;
+    position: absolute;
+}

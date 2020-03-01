@@ -1,0 +1,14 @@
+.cloud {
+    background: url('./assets/100-offline-sprite.png');
+    display: block;
+    height: 15px;
+    width: 47px;
+    background-position: -86px -2px;
+    position: absolute;
+    animation: drift 35s linear infinite;
+}
+
+@keyframes drift {
+    0% { right: -5%; }
+    100% { right: 105%; }
+}

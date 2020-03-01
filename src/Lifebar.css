@@ -1,0 +1,14 @@
+.life {
+    background: url('./assets/100-offline-sprite.png');
+    background-position: 383px 0px;
+    float: right;
+    height: 47px;
+    width: 44px;
+    transform: scaleX(-1) scale(0.5);
+}
+
+.lifebar {
+    position: absolute;
+    right: 0px;
+}
+

@@ -1,0 +1,18 @@
+.floor {
+    background: url('./assets/100-offline-sprite.png');
+    display: block;
+    height: 13px;
+    width: 800px;
+    background-position: -400px -54px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.scene {
+    width: 800px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    overflow: hidden;
+}
