@@ -19,7 +19,7 @@ class Game extends Component {
         super(props)
         this.state = {
             game: this.gameState.START_MENU,
-            lives: 3,   
+            lifes: 3,   
             scene: <StartMenu />,
             score: 0
         }
@@ -42,12 +42,12 @@ class Game extends Component {
     startGame = () => {
         this.setState({
             game: this.gameState.RUNNING,
-            lives: 3,
+            lifes: 3,
             scene: 
             (<>
                 <Sky />
                 <Scorebar score={this.state.score}/>
-                <Lifebar lives={this.state.lives}/>
+                <Lifebar lifes={this.state.lifes}/>
                 <TRex onHit={this.trexHit} onEscaped={this.trexEscaped}/>
             </>),
             score: 0,
@@ -62,10 +62,10 @@ class Game extends Component {
 
     trexEscaped = () => {
         this.setState({
-            lives: this.state.lives - 1,
+            lifes: this.state.lifes - 1,
         })
 
-        if (0 === this.state.lives) {
+        if (0 === this.state.lifes) {
             this.setState({
                 game: this.gameState.SCOREBOARD,
                 scene: <Scoreboard score={this.state.score} />,

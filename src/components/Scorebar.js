@@ -5,7 +5,7 @@ class Scorebar extends Component {
     render() {
         return (
         <div className="scorebar">
-            <span className="score">
+            <span className="score" key={this.props.score}>
                 {this.props.score}
             </span>
         </div>);
