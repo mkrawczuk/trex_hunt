@@ -1,6 +1,5 @@
+import '../styles/StartMenu.css'
 import React, { Component } from 'react'
-
-import './StartMenu.css'
 
 class StartMenu extends Component {
     render() {

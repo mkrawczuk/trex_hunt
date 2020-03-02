@@ -1,5 +1,5 @@
+import '../styles/TRex.css'
 import React, { Component } from 'react'
-import './TRex.css'
 
 class TRex extends Component {
 

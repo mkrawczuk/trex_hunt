@@ -1,4 +1,4 @@
-import './Scorebar.css';
+import '../styles/Scorebar.css';
 import React, { Component } from 'react';
 
 class Scorebar extends Component {

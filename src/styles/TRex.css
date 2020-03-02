@@ -4,7 +4,7 @@
 }
 
 .trex-toddle, .trex-blink, .trex-stand, .trex-duck, .trex-shock {
-    background: url('./assets/100-offline-sprite.png');
+    background: url('../assets/100-offline-sprite.png');
     display: block;
     height: 47px;
     width: 44px;

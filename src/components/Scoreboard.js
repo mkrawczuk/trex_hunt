@@ -1,10 +1,8 @@
-import './Scoreboard.css';
+import '../styles/Scoreboard.css';
 import React, {Component} from 'react';
 
 class Scoreboard extends Component {
-    constructor(props) {
-        super(props);
-    }
+
     render() { 
         return ( 
         <div className="scoreboard">

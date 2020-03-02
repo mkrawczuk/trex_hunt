@@ -1,5 +1,5 @@
+import '../styles/Sky.css'
 import React, { Component } from 'react'
-import './Sky.css'
 
 class Cloud extends Component {
     render() {

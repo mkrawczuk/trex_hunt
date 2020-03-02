@@ -1,5 +1,5 @@
 .floor {
-    background: url('./assets/100-offline-sprite.png');
+    background: url('../assets/100-offline-sprite.png');
     display: block;
     height: 13px;
     width: 800px;

@@ -1,4 +1,4 @@
-import './Game.css';
+import '../styles/Game.css';
 import React, { Component } from 'react';
 import Lifebar from './Lifebar'
 import Scorebar from './Scorebar';
