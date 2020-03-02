@@ -13,14 +13,7 @@ class TRex extends Component {
 
     handleEscaped = (e) => {
         if (e.animationName.includes("run")) {
-            // All the logic stufff should go here, before the actual TRex
-            // is removed.
             this.props.onEscaped();
-            this.setState({
-                motion: '',
-                sprite: ''
-            })
-            setTimeout(this.restart, Math.random()* 2000);
         }
     }
 

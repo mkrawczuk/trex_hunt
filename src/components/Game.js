@@ -43,39 +43,63 @@ class Game extends Component {
         this.setState({
             game: this.gameState.RUNNING,
             lifes: 3,
+            score: 0,
             scene: 
             (<>
-                <Sky />
                 <Scorebar score={this.state.score}/>
                 <Lifebar lifes={this.state.lifes}/>
                 <TRex onHit={this.trexHit} onEscaped={this.trexEscaped}/>
             </>),
-            score: 0,
         })
     }
 
     trexHit = () => {
+        let scoreIncrement = 1000;
         this.setState({
-            score: this.state.score + 1000,
-        })
+            score: this.state.score + scoreIncrement,
+            // since passing state to children through props does not guarantee re-render,
+            // we have to re-render all the components.
+            scene: (
+            <>
+                <Scorebar score={this.state.score + scoreIncrement}/>
+                <Lifebar lifes={this.state.lifes}/>
+                <TRex onHit={this.trexHit} onEscaped={this.trexEscaped}/>
+            </>),
+        });
     }
 
     trexEscaped = () => {
-        this.setState({
-            lifes: this.state.lifes - 1,
-        })
-
+        // game over!
+        // reset life count and score.
         if (0 === this.state.lifes) {
             this.setState({
                 game: this.gameState.SCOREBOARD,
                 scene: <Scoreboard score={this.state.score} />,
+                lifes: 3,
+                score: 0,
             })
-        }
+        } else {
+            let _lifes = this.state.lifes - 1;
+            console.log('asdasdasd');
+            this.setState({
+                lifes: _lifes,
+                // since passing state to children through props does not guarantee re-render,
+                // we have to re-render all the components.
+                scene: (
+                    <>
+                        <Scorebar score={this.state.score}/>
+                        <Lifebar lifes={this.state.lifes - 1}/>
+                        <TRex onHit={this.trexHit} onEscaped={this.trexEscaped} key={_lifes}/>
+                    </>),
+                });
+        };
+
     }
 
     render() {
         return (
             <div className="scene" onClick={this.handleClick}>
+                <Sky />
                 {this.state.scene}
                 <div className="floor"/>
             </div>
