@@ -1,21 +1,18 @@
 import '../styles/Scoreboard.css';
-import React, {Component} from 'react';
+import React from 'react';
 
-class Scoreboard extends Component {
-
-    render() { 
-        return ( 
-        <div className="scoreboard">
-            (placeholder)
-            <br/>
-            Game Over!
-            Your final score:
-            <br/>
-            {this.props.score}
-            <br/>
-            Click to restart
-        </div> );
-    }
+function Scoreboard(props) {
+    return (
+    <div className="scoreboard">
+        (placeholder)
+        <br/>
+        Game Over!
+        Your final score:
+        <br/>
+        {props.score}
+        <br/>
+        Click to restart
+    </div> );
 }
  
 export default Scoreboard;
