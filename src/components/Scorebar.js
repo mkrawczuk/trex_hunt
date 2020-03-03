@@ -1,15 +1,13 @@
 import '../styles/Scorebar.css';
-import React, { Component } from 'react';
+import React from 'react';
 
-class Scorebar extends Component {
-    render() {
+function Scorebar(props) {
         return (
         <div className="scorebar">
-            <span className="score" key={this.props.score}>
-                {this.props.score}
+            <span className="score" key={props.score}>
+                {props.score}
             </span>
         </div>);
-    }
 }
 
 export default Scorebar;
