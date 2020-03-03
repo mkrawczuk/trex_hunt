@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trex_hunt/static/css/main.e710e9df.chunk.css",
+    "main.js": "/trex_hunt/static/js/main.606aafff.chunk.js",
+    "main.js.map": "/trex_hunt/static/js/main.606aafff.chunk.js.map",
+    "runtime-main.js": "/trex_hunt/static/js/runtime-main.317e636e.js",
+    "runtime-main.js.map": "/trex_hunt/static/js/runtime-main.317e636e.js.map",
+    "static/js/2.d66be5ab.chunk.js": "/trex_hunt/static/js/2.d66be5ab.chunk.js",
+    "static/js/2.d66be5ab.chunk.js.map": "/trex_hunt/static/js/2.d66be5ab.chunk.js.map",
+    "index.html": "/trex_hunt/index.html",
+    "precache-manifest.3e46c1a67138e303e472318d264a4bd8.js": "/trex_hunt/precache-manifest.3e46c1a67138e303e472318d264a4bd8.js",
+    "service-worker.js": "/trex_hunt/service-worker.js",
+    "static/css/main.e710e9df.chunk.css.map": "/trex_hunt/static/css/main.e710e9df.chunk.css.map",
+    "static/js/2.d66be5ab.chunk.js.LICENSE.txt": "/trex_hunt/static/js/2.d66be5ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.317e636e.js",
+    "static/js/2.d66be5ab.chunk.js",
+    "static/css/main.e710e9df.chunk.css",
+    "static/js/main.606aafff.chunk.js"
+  ]
+}
