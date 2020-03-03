@@ -80,7 +80,6 @@ class Game extends Component {
             })
         } else {
             let _lifes = this.state.lifes - 1;
-            console.log('asdasdasd');
             this.setState({
                 lifes: _lifes,
                 // since passing state to children through props does not guarantee re-render,
