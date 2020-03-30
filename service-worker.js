@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/trex_hunt/precache-manifest.3e46c1a67138e303e472318d264a4bd8.js"
+  "/trex_hunt/precache-manifest.f3e6efc0a3c8d5e0b4981aa9665c80b1.js"
 );
 
 self.addEventListener('message', (event) => {

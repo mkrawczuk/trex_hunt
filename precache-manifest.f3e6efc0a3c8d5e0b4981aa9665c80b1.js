@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0688a7f388bc255f122b8d38fc42c4d7",
+    "revision": "2770b746fa273d2ebd2692985201afb6",
     "url": "/trex_hunt/index.html"
   },
   {

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TRex Hunt",
+  "name": "TRex Hunt, an immersive point-n-clik game written in ReactJS.",
   "icons": [
     {
       "src": "favicon.ico",
